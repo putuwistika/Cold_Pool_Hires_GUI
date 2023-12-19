@@ -1,0 +1,6 @@
+xarray
+matplotlib
+tk
+xgrads
+numpy
+Pillow

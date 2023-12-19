@@ -1,0 +1,59 @@
+
+c max array dimensions
+      parameter(nxm=503,nzm=122,ny=1) ! requires nx <= nxm, nz <= nzm
+c common blocks      
+      common/dsize/nx,nz
+      common/comp/ianelastic,imoist,fcoef
+      common/base/uinit(nzm),tinit(nzm),qinit(nzm),rhou(nzm),
+     1 rhow(nzm),pk(nzm),vinit(nzm),zero(nzm),xnsq_pbl,xnsq_trop,
+     2 xnsq_strat,pbld,tropo,xnsqs,psurf,thsurf,usurf,
+     3 shear1,sdepth1,shear2,sdepth2,shear3,
+     4 qsurf,qvalue1,qheight1,qvalue2,qheight2,qvalue3,qheight3,
+     5 rhtemp(nzm),rhsurf,rhvalue1,rhheight1,rhvalue2,rhheight2,
+     6 rhvalue3,rhheight3
+      common/geom/i2d
+      common/grids/dx,dy,dz,cc1,cc2,ztop,time,timend,dt,d2t,plot
+      common/leap/dtx,dtz
+      common/uwind/up(nxm,nzm),u(nxm,nzm),um(nxm,nzm)
+      common/vwind/vp(nxm,nzm),v(nxm,nzm),vm(nxm,nzm),ienable_v
+      common/wwind/wp(nxm,nzm),w(nxm,nzm),wm(nxm,nzm)
+      common/vapor/qvp(nxm,nzm),qv(nxm,nzm),qvm(nxm,nzm)
+      common/cloud/qcp(nxm,nzm),qc(nxm,nzm),qcm(nxm,nzm)
+      common/rainw/qrp(nxm,nzm),qr(nxm,nzm),qrm(nxm,nzm)
+      common/ptemp/thp(nxm,nzm),th(nxm,nzm),thm(nxm,nzm)
+      common/piprt/pip(nxm,nzm),pi(nxm,nzm),pim(nxm,nzm)
+      common/sound/csnd,csq
+      common/difus/dkx,dkz,eps
+      common/model/tflux,linear
+      common/rotate/corf
+      common/const/g,cp,rd,psl,cstar,trigpi,xk,xki,cpv,rcp,cv,cvrd,
+     1 hlv,hlvcp
+      common/grads/igradscnt,ngradsvars,ctlfile,datfile,knx,
+     1 byteswap
+      common/temporary/temp(nxm,nzm),pprt(nxm,nzm)
+      common/moisture/accum_cond(nxm,nzm),sum_conden
+c cases
+      common/thermal_case/ithermal,delt,radx,radz,zcnt
+      common/heatflux_case/ishflux,tdelt,icoast,tground(nxm),cdh,
+     1 irand,addflx(nxm)
+      common/strfcn_case/istrfcn,strfcn(nxm,nzm),s_psik,s_psim,
+     1 s_ampl,s_znaught,s_repeat,s_freq,s_period,s_timfac
+      common/heatsrc_case/ihsrc,hsrc(nxm,nzm),h_ampl,h_radius_x,
+     1 h_radius_z,h_center_z,h_freq,h_modes,timfac
+      common/seabreeze_case/iseabreeze,sb_hsrc(nxm,nzm),sb_x0,
+     1 sb_z0,sb_period,sb_freq,sb_timfac,sb_ampl,sb_latitude,
+     2 sb_linear
+      common/coolzone_case/icoolzone,cz_ampl,cz_rightedge,
+     1 cz_depth,cz_width,cz_coolrate,rcoolrate,icrit,icooll,icoolr,
+     2 icoolwd,locgf
+c blktri for buoy pressure
+      common/blktr/ am(nxm),bm(nxm),cm(nxm),an(nzm),bn(nzm),cn(nzm),
+     1 wa(8000),utemp(nxm,nzm),buoy(nxm,nzm),pbyc(nxm,nzm),
+     2 advu(nxm,nzm),advw(nxm,nzm),ptot(nxm,nzm),pdyn(nxm,nzm),
+     3 byctrm(nxm,nzm),dyntrm(nxm,nzm),alltrm(nxm,nzm),ipressure
+c arrays for computing total forcing acceleration
+      common/accel/iaccel,dudt(nxm,nzm),dwdt(nxm,nzm),dudtd(nxm,nzm),  !
+     1 dwdtd(nxm,nzm),dudtb(nxm,nzm),dwdtb(nxm,nzm),dudtt(nxm,nzm),
+     2 dwdtt(nxm,nzm),xlwdt(nxm,nzm)
+c grads filename stuff
+      character*80 ctlfile,datfile
