@@ -69,4 +69,4 @@ This program is a Python Graphical User Interface (GUI) port of the original wor
 
 ---
 
-© 2023-2024 Mesoscale Meteorology ITB. All rights reserved.
+© 2023-2024 Mesoscale Meteorology Students. All rights reserved.
