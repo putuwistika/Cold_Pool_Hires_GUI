@@ -17,7 +17,7 @@ Welcome to the Cold Pool Hires GUI Interactive Model developed by Mahasiswa Mate
 Ensure that you have the following software installed:
 
 - [Python](https://www.python.org/) (version 3.10 or higher)
-- [Gfortran Compiler](https://gcc.gnu.org) (version 3.10 or higher)
+- [Gfortran Compiler](https://gcc.gnu.org)
 - [Required Python Libraries For Mac & Linux ](requirements_for_mac_linux.txt) - Install using `pip install -r requirements_for_mac&linux.txt`
 - [Required Python Libraries For Windows ](requirements_for_windows.txt) - Install using `pip install -r requirements_for_windows.txt`
 
