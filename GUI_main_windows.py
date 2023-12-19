@@ -353,7 +353,7 @@ def show_plot():
 
     # Create a contour plot using Matplotlib
     plt.figure(figsize=(8, 6))
-    contour_plot = plt.contourf(X, Y, z, levels=20, cmap='viridis')
+    contour_plot = plt.contourf(X, Y, z, levels=20, cmap='plasma')
 
     # Add colorbar
     cbar = plt.colorbar(contour_plot, label="Temperature")
