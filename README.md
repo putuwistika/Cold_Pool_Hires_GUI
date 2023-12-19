@@ -59,7 +59,7 @@ Ensure that you have the following software installed:
 
 This program is a Python GUI port of the original work available at [http://people.atmos.ucla.edu/fovell/DTDM/](http://people.atmos.ucla.edu/fovell/DTDM/). The original program was developed by [Robert Fovell]. The porting to Python and the development of the graphical user interface (GUI) were undertaken as part of a class project for Meteorologi Skala Meso.
 
-
+![](http://people.atmos.ucla.edu/fovell/DTDM/images/cpool_hires_thp.gif)
 
 ## Contributor
 [Contributor List](CONTRIBUTOR.md)
