@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to the Cold Pool Hires GUI Interactive Model developed by Mahasiswa Mateorologi Skala Meso 2023/2024. This model provides a user-friendly graphical interface for exploring and understanding cold pool phenomena in meteorology.
+Welcome to the Cold Pool Hires GUI Interactive Model developed by Mesoscale Meteorology Student class 2023/2024. This model provides a user-friendly graphical interface for exploring and understanding cold pool phenomenon in mesoscale meteorology.
 
 ## Features
 
@@ -57,7 +57,7 @@ Ensure that you have the following software installed:
 
 ## Acknowledgments
 
-This program is a Python GUI port of the original work available at [http://people.atmos.ucla.edu/fovell/DTDM/](http://people.atmos.ucla.edu/fovell/DTDM/). The original program was developed by [Robert Fovell]. The porting to Python and the development of the graphical user interface (GUI) were undertaken as part of a class project for Meteorologi Skala Meso.
+This program is a Python Graphical User Interface (GUI) port of the original work available at [http://people.atmos.ucla.edu/fovell/DTDM/](http://people.atmos.ucla.edu/fovell/DTDM/). The original program was developed by [Robert Fovell]. The porting to Python and the development of the GUI were undertaken as part of a class project for Mesoscale Meteorology.
 
 ![](http://people.atmos.ucla.edu/fovell/DTDM/images/cpool_hires_thp.gif)
 
@@ -68,4 +68,4 @@ This program is a Python GUI port of the original work available at [http://peop
 
 ---
 
-© 2023-2024 Meteorologi Skala Meso. All rights reserved.
+© 2023-2024 Mesoscale Meteorology ITB. All rights reserved.
