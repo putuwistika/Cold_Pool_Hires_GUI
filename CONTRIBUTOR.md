@@ -10,6 +10,7 @@
 
 ### Hania Safira Sirait (12820016)
 - GUI Customization
+- Windows Tester
 
 ### Fattah Ghiffari (12820026)
 - ??
